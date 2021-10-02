@@ -1,5 +1,6 @@
 package org.elasticsearch.analysis;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
