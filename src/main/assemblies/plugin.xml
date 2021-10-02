@@ -14,7 +14,10 @@
             <source>${project.basedir}/src/main/resources/plugin-security.policy</source>
             <filtered>true</filtered>
         </file>
-
+        <file>
+            <source>${project.basedir}/src/main/resources/coccoc-tokenizer.properties</source>
+            <filtered>true</filtered>
+        </file>
     </files>
     <dependencySets>
         <dependencySet>
