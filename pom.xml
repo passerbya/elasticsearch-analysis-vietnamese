@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.elasticsearch</groupId>
-    <artifactId>elasticsearch-analysis-vietnamese</artifactId>
-    <version>7.4.0</version>
+    <artifactId>analysis-vietnamese</artifactId>
+    <version>7.15.0</version>
     <packaging>jar</packaging>
-    <name>elasticsearch-analysis-vietnamese</name>
+    <name>analysis-vietnamese</name>
     <url>https://github.com/duydo/elasticsearch-analysis-vietnamese/</url>
     <description>Elasticsearch Vietnamese Analysis Plugin</description>
     <inceptionYear>2014</inceptionYear>
@@ -102,7 +102,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.3.0</version>
                 <configuration>
                     <appendAssemblyId>false</appendAssemblyId>
                     <outputDirectory>${project.build.directory}/releases/</outputDirectory>
