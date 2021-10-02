@@ -19,13 +19,15 @@ public class VietnameseConfig {
 
 
     public VietnameseConfig(Settings settings) {
+        String path;
         try (FileInputStream is = new FileInputStream(safePath.resolve("coccoc-tokenizer.properties").toFile())) {
             Properties configPro = new Properties();
             configPro.load(is);
-            dictPath = configPro.getProperty("dict_path", DEFAULT_DICT_PATH);
+            path = configPro.getProperty("dict_path", DEFAULT_DICT_PATH);
         } catch (Exception e) {
-            dictPath = settings.get("dict_path", DEFAULT_DICT_PATH);
+            path = settings.get("dict_path", DEFAULT_DICT_PATH);
         }
+        dictPath = path;
         keepPunctuation = settings.getAsBoolean("keep_punctuation", Boolean.FALSE);
         splitHost = settings.getAsBoolean("split_host", Boolean.FALSE);
         splitURL = settings.getAsBoolean("split_url", Boolean.FALSE);
