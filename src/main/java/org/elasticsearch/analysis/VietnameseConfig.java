@@ -23,7 +23,7 @@ public class VietnameseConfig {
             Properties configPro = new Properties();
             try (FileInputStream is = new FileInputStream(safePath.resolve("coccoc-tokenizer.properties").toFile())) {
                 configPro.load(is);
-                dictPath = configPro.get("dict_path", DEFAULT_DICT_PATH);
+                dictPath = configPro.getProperty("dict_path", DEFAULT_DICT_PATH);
             }
         }
         keepPunctuation = settings.getAsBoolean("keep_punctuation", Boolean.FALSE);
