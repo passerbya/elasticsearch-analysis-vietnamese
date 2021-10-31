@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.elasticsearch</groupId>
     <artifactId>analysis-vietnamese</artifactId>
-    <version>7.15.0</version>
+    <version>7.15.1</version>
     <packaging>jar</packaging>
     <name>analysis-vietnamese</name>
     <url>https://github.com/duydo/elasticsearch-analysis-vietnamese/</url>
